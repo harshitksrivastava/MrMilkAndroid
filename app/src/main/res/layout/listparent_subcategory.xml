@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent_card_view"
+    android:background="@color/colorPrimary"
+    android:padding="6dp"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/brand_id"
+                    android:layout_width="357dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="serif"
+                    android:padding="1dp"
+                    android:text="Brand Name"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorGray"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/category_expand_btn"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    android:src="@drawable/ic_down_arrow" />
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/total_no_of_products_id"
+            android:textColor="@color/colorGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="3dp"
+            android:text="no of products"
+            android:textAlignment="gravity"
+            android:textSize="11dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/innerRecyclerView"
+            android:scrollbars="vertical"
+            android:layout_marginTop="15dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total_no_of_products_id"
+            android:background="#f6f6f6"
+            android:visibility="gone">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:paddingBottom="5dp"
+            android:background="@android:color/darker_gray" />
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--       xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="match_parent"-->
+<!--       android:id="@+id/parent_card_view"-->
+<!--       android:background="#f6f6f6"-->
+<!--      >-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="365dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:layout_marginStart="25dp"-->
+<!--            android:layout_marginLeft="25dp"-->
+<!--            android:layout_marginTop="25dp"-->
+<!--            android:layout_marginEnd="25dp"-->
+<!--            android:layout_marginRight="25dp"-->
+<!--            android:layout_marginBottom="25dp"-->
+
+<!--            >-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/brand_id"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:layout_marginEnd="0dp"-->
+<!--                android:fontFamily="serif"-->
+<!--                android:textColor="@color/colorGray"-->
+<!--                android:padding="1dp"-->
+<!--                android:text="Brand Name"-->
+<!--                android:textAlignment="gravity"-->
+<!--                android:textSize="15dp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/category_expand_btn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:background="#FFF"-->
+<!--                android:src="@drawable/ic_down_arrow" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/total_no_of_products_id"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginTop="3dp"-->
+<!--                android:text="no of products"-->
+<!--                android:layout_below="@+id/brand_id"-->
+<!--                android:textAlignment="gravity"-->
+<!--                android:textSize="11dp" />-->
+
+
+
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0.5dp"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_below="@+id/innerRecyclerView"-->
+<!--                android:background="@android:color/darker_gray" />-->
+
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/innerRecyclerView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_below="@+id/total_no_of_products_id"-->
+<!--                android:background="#f6f6f6"-->
+<!--                android:visibility="gone">-->
+
+<!--            </androidx.recyclerview.widget.RecyclerView>-->
+
+
+
+<!--        </RelativeLayout>-->
+
+<!--</androidx.cardview.widget.CardView>-->

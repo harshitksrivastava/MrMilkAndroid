@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:elevation="5dp"
+
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/linear_cart_layout"
+        android:layout_width="330dp"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="1"
+        android:background="@drawable/cart_button"
+        android:orientation="horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:layout_width="20.07dp"
+            android:layout_height="19.13dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center|bottom"
+            android:layout_marginStart="19.96dp"
+            android:layout_marginTop="16.56dp"
+            android:layout_marginBottom="16.31dp"
+            android:src="@drawable/ic_baseline_shopping_cart" />
+
+        <LinearLayout
+            android:layout_marginStart="22.97dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Item added"
+                android:textSize="12dp"
+                android:textAlignment="center"
+                android:textAppearance="@font/proxima_nova_bold"
+                android:textColor="@color/colorPrimary"
+
+
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Rs 22.00"
+                android:textSize="12dp"
+                android:textAlignment="center"
+                android:textAppearance="@font/proxima_nova_bold"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center"
+            android:layout_marginStart="78dp"
+            android:textAppearance="@font/proxima_nova_reg"
+            android:text="Proceed to cart"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12dp" />
+
+        <ImageButton
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_width="10dp"
+            android:layout_height="11dp"
+            android:src="@drawable/ic_baseline_arrow_right_24" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

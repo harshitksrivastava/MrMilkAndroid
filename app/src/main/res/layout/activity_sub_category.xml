@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activities.SubCategoryActivity"
+    android:id="@+id/subcategory_id">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/layout_subcategory"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:layout_marginBottom="4dp"
+        app:elevation="0dp"
+        android:background="@drawable/subcategory_toolbar_style"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Mr Milk"
+        app:titleMarginStart="40dp"
+        app:titleTextColor="@color/colorPrimaryDark">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_subcategory"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_keyboard_arrow_left"/>
+        <!--            android:layout_margin="4dp"-->
+<!--            android:background="@drawable/subcategory_toolbar_style"-->
+<!--            android:gravity="center"-->
+<!--            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--            app:title="Mr Milk"-->
+<!--            app:titleMarginStart="40dp"-->
+<!--            app:titleTextColor="@color/colorPrimaryDark" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:padding="5dp">
+
+
+            <ImageView
+                android:id="@+id/subcategory_img_id"
+                android:layout_width="194dp"
+                android:layout_height="162dp"
+                android:background="@drawable/subcategory_img_icon_style"
+                android:layout_marginLeft="5dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/subcategory_title_id"
+                android:layout_width="221dp"
+                android:forceHasOverlappingRendering="true"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="start"
+                android:textAlignment="textStart"
+                android:text="CATEGORY"
+                android:textColor="@color/colorPrimary"
+                android:textSize="41dp"
+                android:textAppearance="@font/proxima_nova_bold"/>
+        </LinearLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative_subcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="259dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        >
+
+        <ScrollView
+            android:id="@+id/item_section_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linear_cart_layout">
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/recycler_subcategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:padding="2dp"
+                android:scrollbars="vertical">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </ScrollView>
+
+
+
+
+    </RelativeLayout>
+
+
+
+<!--    <include-->
+
+<!--        layout="@layout/cart_popup"-->
+<!--        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">-->
+<!--    </include>-->
+
+
+
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/cart_layout"/>-->
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

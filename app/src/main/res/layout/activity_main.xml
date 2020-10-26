@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_gradient" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="112dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_mrmilk_icon" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="158dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="109dp"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/imageView"
+            android:layout_marginEnd="108dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/signpainterhousescriptsemibold"
+            android:text="Mr. Milk"
+            android:textColor="@color/colorTitle"
+            android:textSize="51dp"
+            />
+
+
+        <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="13dp"
+        android:layout_marginTop="6dp"
+
+        android:layout_below="@+id/textView"
+        android:fontFamily="@font/proxima_nova_reg"
+        android:gravity="center"
+        android:text="Milk Delivery at your Doorstep!"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorTitle"
+        android:textSize="11dp" />
+
+    <LinearLayout
+        android:id="@+id/phone_linear_layout"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_login_frame"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/textView4">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="87dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="199dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:text="Get Started"
+            android:textColor="@color/colorTitle"
+            android:textSize="14dp" />
+
+
+
+        <LinearLayout
+            android:id="@+id/phone_details"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/country_code"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="14dp"
+                android:textColorHint="@color/colorTextHint"
+                android:fontFamily="@font/proxima_nova_reg"
+                android:layout_marginStart="40dp"
+                android:hint="+91"
+                android:inputType="phone" />
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginEnd="30dp"
+                android:textColorHint="@color/colorTextHint"
+                android:fontFamily="@font/proxima_nova_reg"
+                android:layout_marginStart="5dp"
+                android:hint="Your Phone Number"
+                android:textSize="14dp"
+                android:maxLength="10"
+                android:inputType="phone" />
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/login_error_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:layout_marginStart="42dp"
+            android:fontFamily="@font/proxima_nova_reg"
+            android:text="Cannot be Blank"
+            android:textColor="@color/colorErrorText"
+            android:textSize="9dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:text="We will Send you OTP on this Number"
+            android:fontFamily="@font/proxima_nova_reg"
+            android:textSize="11dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="42dp"
+            />
+
+        <ImageButton
+            android:id="@+id/submitPhone_Btn"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/full_circle"
+            android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_below="@+id/phone_linear_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="111dp"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:gravity="center"
+        android:text="2020 Mr. Milk. All Rights Reserved"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13dp" />
+</RelativeLayout>
+

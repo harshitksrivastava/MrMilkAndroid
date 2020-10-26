@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="159dp"
+    android:layout_height="114dp"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+
+    android:layout_margin="5dp"
+    android:padding="2dp"
+    android:background="@drawable/card_edge"
+    cardview:cardCornerRadius="10dp"
+    android:id="@+id/categories_id">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/category_img_id"
+            android:layout_width="match_parent"
+            android:padding="2dp"
+            android:layout_height="91dp"
+            android:scaleType="fitXY"/>
+<!--            android:background="@drawable/loading_shape"/>-->
+        
+        <TextView
+            android:id="@+id/category_title_id"
+            android:textSize="14dp"
+            android:textColor="@color/colorCartText"
+            android:gravity="center"
+            android:layout_marginBottom="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:text="category name"
+            android:textAlignment="center"
+            android:textAppearance="@font/proxima_nova_reg"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

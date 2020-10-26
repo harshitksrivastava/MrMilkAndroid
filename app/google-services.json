@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "418316577109",
+    "firebase_url": "https://mrmilk-e15f0.firebaseio.com",
+    "project_id": "mrmilk-e15f0",
+    "storage_bucket": "mrmilk-e15f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418316577109:android:7f13998b8ca61c61e4e7dc",
+        "android_client_info": {
+          "package_name": "com.example.mrmilk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418316577109-sqquumjhj4kt71nh78ec8qhv1bcpq8j6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mrmilk",
+            "certificate_hash": "32b0d9d0c4cd3a9a06b5833a2cb89dbfe47fc9da"
+          }
+        },
+        {
+          "client_id": "418316577109-kns49ogtpdeumc9sf5cm2uv1l0re0dql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDof525954irj7VWNfL1rDKaaSHSUHiCSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418316577109-kns49ogtpdeumc9sf5cm2uv1l0re0dql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,20 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/counterView"
+        android:background="@drawable/subcategory_button_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/proxima_nova_semibold"
+        android:textSize="12dp"
+        android:padding="6dp"
+
+        android:text="Rs. 55"/>
+</LinearLayout>

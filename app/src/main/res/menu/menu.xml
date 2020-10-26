@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/my_Subscriptions"
+        android:id="@+id/my_subscription"
+        android:icon="@drawable/ic_icon_subscription"/>
+
+    <item
+        android:title="@string/my_orders"
+        android:id="@+id/my_orders"
+        android:icon="@drawable/ic_icon_my_orders"/>
+
+    <item
+        android:title="@string/wallet_name"
+        android:id="@+id/my_wallet"
+        android:icon="@drawable/ic_icon_wallet"
+        app:actionLayout="@layout/menu_wallet"
+        app:showAsAction="always"
+        />
+
+
+    <item
+        android:title="@string/help_and_support"
+        android:id="@+id/help_and_support"
+        android:icon="@drawable/ic_icon_help_and_support"
+        />
+
+    <item
+        android:title="@string/logout"
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_icon_logout"
+        />
+
+</menu>

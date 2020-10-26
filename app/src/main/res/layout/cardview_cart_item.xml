@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/cardview_cart"
+        app:cardElevation="7dp"
+        app:cardCornerRadius="7dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            >
+
+            <ImageView
+                android:id="@+id/cart_product_row_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/cart_product_name_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Product Name"
+                    android:gravity="start"
+                    android:textSize="14dp"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorGray"/>
+
+                <TextView
+                    android:id="@+id/cart_no_of_packets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="3dp"
+                    android:text="1 Pkt"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorGray"
+                    android:textSize="11dp" />
+
+                <LinearLayout
+                    android:id="@+id/cart_layout_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:padding="3dp">
+
+
+                    <TextView
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\u20B9"
+                        android:textColor="@color/colorGray"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/cart_product_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="2dp"
+                        android:text="1000"
+                        android:textColor="@color/colorGray"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/loading_shape"
+                android:gravity="center"
+                >
+
+
+
+                <ImageButton
+                    android:id="@+id/cart_delete_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bin"
+                    android:background="@color/colorPrimary"/>
+
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/cart_number_button"
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:alpha="0.8"
+                    android:background="@drawable/subcategory_button_style"
+                    android:gravity="center_vertical"
+                    android:visibility="visible"
+                    app:backGroundColor="@color/colorPrimaryDark"
+                    app:finalNumber="20"
+                    app:initialNumber="0">
+
+                </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
